@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clipToPadding="false"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@mipmap/ic_launcher"
+                android:importantForAccessibility="no"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:textSize="28sp"
+                android:text="@string/app_name"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/desc"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:stateListAnimator="@animator/raise"
+            android:theme="@style/AppTheme.SaveCard"
+            app:cardBackgroundColor="?android:colorPrimaryDark"
+            app:contentPadding="16dp"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="32dp"
+                        android:drawableStart="@drawable/ic_launcher_save_24dp"
+                        android:drawableTint="?android:textColorPrimaryInverse"
+                        android:drawablePadding="16dp"
+                        android:textColor="?android:textColorPrimaryInverse"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/save_name"
+                        android:gravity="center_vertical"/>
+
+                    <Switch
+                        android:id="@+id/switch_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <moe.shizuku.bridge.widget.HtmlTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?android:textColorSecondaryInverse"
+                    android:textSize="14sp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:lineSpacingExtra="2dp"
+                    app:textHtml="@string/save_desc"/>
+
+                <TextView
+                    android:id="@+id/view_saved_files"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@android:style/Widget.Material.Button.Borderless"
+                    android:textColor="?android:textColorPrimaryInverse"
+                    android:text="@string/view_saved_files"
+                    android:visibility="gone"
+                    tools:visibility="visible"/>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:stateListAnimator="@animator/raise"
+            android:theme="@style/AppTheme.SaveCard"
+            app:cardBackgroundColor="?android:colorPrimaryDark"
+            app:contentPadding="16dp"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="32dp"
+                        android:drawableStart="@drawable/ic_launcher_forward_24dp"
+                        android:drawableTint="?android:textColorPrimaryInverse"
+                        android:drawablePadding="16dp"
+                        android:textColor="?android:textColorPrimaryInverse"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/forward_name"
+                        android:gravity="center_vertical"/>
+
+                    <Switch
+                        android:id="@+id/switch_forward"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <moe.shizuku.bridge.widget.HtmlTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?android:textColorSecondaryInverse"
+                    android:textSize="14sp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:lineSpacingExtra="2dp"
+                    app:textHtml="@string/forward_desc"/>
+                
+                <TextView
+                    android:id="@+id/select_forward_apps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@android:style/Widget.Material.Button.Borderless"
+                    android:textColor="?android:textColorPrimaryInverse"
+                    android:text="@string/select_forward_apps"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <moe.shizuku.bridge.widget.HtmlTextView
+            android:id="@+id/work_profile_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:lineSpacingExtra="2dp"
+            android:text="@string/work_profile_desc"
+            android:textColor="?android:textColorSecondary"/>
+
+    </LinearLayout>
+
+</ScrollView>

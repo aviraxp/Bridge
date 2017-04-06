@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_save">保存到内置存储</string>
+    <string name="action_forwarding">转发</string>
+    <string name="save_failed" formatted="false">保存失败。\n%s</string>
+    <string name="saved" formatted="false">已保存到 %s。</string>
+    <string name="save_notification">文件已保存</string>
+    <string name="forward_title">转发…</string>
+    <string name="select_forward_apps_title">点按切换是否显示…</string>
+
+    <string name="fail_no_write_storage_permission">Bridge 没有读写存储空间权限，请在设置中授予。</string>
+
+    <string name="desc">一座连接分享到内置存储，工作用户或是其他应用的桥梁。</string>
+
+    <string name="save_name">保存到内置存储</string>
+    <string name="save_desc"><![CDATA[保存分享的文件到 <font face="monospace">/Download/Bridge/</font>。<br>对于屏幕截图，它们将会被保存至 <font face="monospace">/Pictures/Screenshots/</font>。]]></string>
+    <string name="view_saved_files">查看保存的文件</string>
+
+    <string name="forward_name">转发</string>
+    <string name="forward_desc"><![CDATA[由于部分应用不能正确接收分享内容，您可以先分享至 Bridge，Bridge 将会转发分享的内容到那些应用。<br>您需要在先选择什么应用会显示在转发中。]]></string>
+    <string name="select_forward_apps">选择可以转发的应用</string>
+
+    <string name="work_profile_desc"><![CDATA[您似乎开启了工作资料，若要在主用户和工作资料之间分享文件，您首先需要在对应用户中安装 Bridge 并启用对应功能。然后即可通过点击“切换到工作（个人）”来使用对应用户中的 Bridge。]]></string>
+
+    <string name="noApplications">没有应用可执行此操作。</string>
+
+    <string name="select_first">您需要在 Bridge 中先选择什么应用会显示在转发中。</string>
+
+</resources>

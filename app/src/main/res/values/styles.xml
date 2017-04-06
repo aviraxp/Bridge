@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.Transparent" parent="android:Theme.Translucent.NoTitleBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="AppTheme.SaveCard">
+        <item name="android:colorPrimary">#9C27B0</item>
+        <item name="android:colorPrimaryDark">#7B1FA2</item>
+        <item name="android:colorAccent">#FFD740</item>
+    </style>
+
+    <!-- Theme used for the intent picker activity. -->
+    <style name="AppTheme.Resolver" parent="android:Theme.Material.Light">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorControlActivated">?android:colorControlHighlight</item>
+        <!--<item name="android:listPreferredItemPaddingStart">?android:dialogPreferredPadding</item>
+        <item name="android:listPreferredItemPaddingEnd">?android:dialogPreferredPadding</item>-->
+
+        <!-- Color palette -->
+        <!--<item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <item name="android:colorAccent">@color/colorAccent</item>
+    </style>
+
+</resources>

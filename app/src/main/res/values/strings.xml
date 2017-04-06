@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name" translatable="false">Bridge</string>
+
+    <string name="action_save">Save to internal storage</string>
+    <string name="action_forwarding">Forwarding</string>
+    <string name="save_failed" formatted="false">Save failed.\n%s</string>
+    <string name="saved" formatted="false">Saved %s.</string>
+    <string name="save_notification">File saved</string>
+    <string name="forward_title">Forward…</string>
+    <string name="select_forward_apps_title">Tap to toggle whether to show…</string>
+
+    <string name="fail_no_write_storage_permission">Bridge have no read / write storage permission, please grant it in settings.</string>
+
+    <string name="desc">A bridge that connects share to internal storage, work user or other apps.</string>
+
+    <string name="save_name">Save to internal storage</string>
+    <string name="save_desc"><![CDATA[Save file to <font face="monospace">/Download/Bridge/</font>.<br>To screenshots, they will be saved to <font face="monospace">/Pictures/Screenshots/</font> instead.]]></string>
+    <string name="view_saved_files">View saved files</string>
+
+    <string name="forward_name">Forwarding</string>
+    <string name="forward_desc"><![CDATA[Some app can\'t receive shared item properly, you can share to Bridge first and Bridge will forward shared item to those app.<br>You should select which app will show in forwarding first.]]></string>
+    <string name="select_forward_apps">Select forward apps</string>
+
+    <string name="work_profile_desc"><![CDATA[It seems that you have enabled work profile, to share file cross main user and work profile, you should install Bridge and enable functions in that user first. Then you can use Bridge in that user by tapping \"Switch to Work (Personal)\".]]></string>
+
+    <string name="noApplications">No apps can perform this action.</string>
+
+    <string name="select_first">You should select which app will show in forwarding first in Bridge.</string>
+
+</resources>
