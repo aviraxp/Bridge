@@ -27,13 +27,6 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // too bad
-        if ("paid".equals(BuildConfig.FLAVOR)
-                && !"com.android.vending".equals(getPackageManager().getInstallerPackageName(BuildConfig.APPLICATION_ID))) {
-            finish();
-            return;
-        }
-
         setContentView(R.layout.activity_main);
 
         if (checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
